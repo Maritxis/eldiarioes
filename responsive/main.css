@@ -1,0 +1,58 @@
+body{
+    background-color: #f2f2f2;
+}
+.cards{
+    background-color: grey;
+}
+
+@media only screen and (max-width:768px){
+    .main{
+        display: flexbox;
+        justify-content: center;
+    }
+    .cards{
+        border: 3px solid red;
+        height: 100px;
+        margin:15px;
+    }
+}
+@media only screen and (min-width:768px) and (max-width:992px){
+    .main{
+        display: flex;
+        flex-wrap: wrap
+    }
+    .doble{
+        flex-grow: 2;
+        flex-basis: 100%;
+    }
+    .simple{
+        flex-grow: 1;
+        flex-basis:35%;
+    }
+
+    .cards{
+        border: 3px solid green;
+        height: 100px;
+        margin:7.5px;
+    }
+}
+@media only screen and (min-width:992px){
+    .main{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .doble{
+        flex-grow: 2;
+        flex-basis:42%;
+    }
+    .simple{
+        flex-grow: 1;
+        flex-basis: 20.25%;
+    }
+
+    .cards{
+        border: 3px solid yellowgreen;
+        height: 100px;
+        margin:7.5px;
+    }
+}
